@@ -83,6 +83,22 @@ def safe_name(row: dict[str, str]) -> str:
     return row.get("full_name") or row.get("name") or row.get("url", "unknown")
 
 
+def search_repositories(rows: Iterable[dict[str, str]], query: str, limit: int = 20) -> list[dict[str, str]]:
+    """Return catalogue rows matching all query words, ranked by stars."""
+    words = [word for word in re.findall(r"[a-z0-9][a-z0-9_-]*", query.lower()) if word]
+    matches = []
+    for row in rows:
+        text = searchable_text(row)
+        if words and not all(word in text for word in words):
+            continue
+        try:
+            stars = int(row.get("stars", "0") or 0)
+        except ValueError:
+            stars = 0
+        matches.append((stars, row))
+    return [row for _, row in sorted(matches, key=lambda item: item[0], reverse=True)[:limit]]
+
+
 def render(product_prompt: str, recommendations: dict[str, list[dict[str, str]]]) -> str:
     lines = [
         f"# Agent architecture: {product_prompt}",

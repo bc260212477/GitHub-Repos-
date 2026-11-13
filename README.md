@@ -11,6 +11,17 @@ python agent_architect.py "autonomous research assistant"
 python agent_architect.py "coding agency" --per-capability 3
 ```
 
+Start the backend API:
+
+```bash
+python agent_api.py
+curl http://127.0.0.1:8787/health
+curl 'http://127.0.0.1:8787/api/repositories?q=agent%20memory&limit=5'
+curl -X POST http://127.0.0.1:8787/api/architecture \
+  -H 'Content-Type: application/json' \
+  -d '{"product":"autonomous research assistant","per_capability":2}'
+```
+
 The tool searches the catalog across orchestration, memory, research, coding,
 automation, business apps, and safety. It de-duplicates repositories and includes
 license metadata where available. Recommendations are starting points; review

@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from agent_architect import load_repositories, recommend, render
+from agent_architect import load_repositories, recommend, render, search_repositories
 
 
 class AgentArchitectTests(unittest.TestCase):
@@ -34,6 +34,15 @@ class AgentArchitectTests(unittest.TestCase):
         output = render("research assistant", {"research": []})
         self.assertIn("## Build order", output)
         self.assertIn("research assistant", output)
+
+    def test_search_requires_all_query_words_and_ranks_stars(self):
+        rows = [
+            {"full_name": "org/low", "url": "low", "description": "agent memory", "stars": "2"},
+            {"full_name": "org/high", "url": "high", "description": "agent memory", "stars": "20"},
+            {"full_name": "org/other", "url": "other", "description": "agent search", "stars": "100"},
+        ]
+        result = search_repositories(rows, "agent memory", 10)
+        self.assertEqual([row["full_name"] for row in result], ["org/high", "org/low"])
 
 
 if __name__ == "__main__":
