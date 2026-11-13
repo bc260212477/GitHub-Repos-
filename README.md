@@ -17,6 +17,7 @@ license, maintenance, security, and quality before using any repository.
 ### Hermes and agent skills
 
 - [hermes-skills-over-2000-stars.csv](hermes-skills-over-2000-stars.csv) — 476 matching repositories
+- [hermes-skills-gallery.md](hermes-skills-gallery.md) — screenshot-matched Hermes skill index
 - [Hermes Projects dashboard preview](https://github.com/bc260212477/hermes-agent/blob/feature/projects-dashboard/assets/projects-dashboard-preview.png)
 
 This focused list uses the `>2,000 stars` catalog and matches `hermes`, `skill`,
