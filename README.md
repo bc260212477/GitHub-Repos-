@@ -14,6 +14,14 @@ license, maintenance, security, and quality before using any repository.
 
 - [repositories-over-2000-stars.csv](repositories-over-2000-stars.csv) — 1,690 unique repositories
 
+### Hermes and agent skills
+
+- [hermes-skills-over-2000-stars.csv](hermes-skills-over-2000-stars.csv) — 476 matching repositories
+- [Hermes Projects dashboard preview](https://github.com/bc260212477/hermes-agent/blob/feature/projects-dashboard/assets/projects-dashboard-preview.png)
+
+This focused list uses the `>2,000 stars` catalog and matches `hermes`, `skill`,
+or `agent` in repository metadata. It is a discovery list, not an endorsement.
+
 ## Preview
 
 ![Agent Foundry dashboard](assets/agent-foundry-dashboard.png)
