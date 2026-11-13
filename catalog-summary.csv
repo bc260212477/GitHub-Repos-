@@ -1,0 +1,13 @@
+category,entries,min_stars,max_stars,license_present,license_missing_or_unknown,views_data
+ai-agents-orchestration,200,11555,201451,159,41,unavailable
+ai-machine-learning,108,1059,201582,75,33,unavailable
+automation-productivity,200,15730,302263,167,33,unavailable
+coding-agents-developer-tools,200,4708,371943,140,60,unavailable
+data-science-analytics,95,1003,84564,62,33,unavailable
+devops-cloud-infrastructure,200,15615,336620,149,51,unavailable
+memory-search-databases,200,18935,302263,153,47,unavailable
+mobile-desktop-game,200,6209,146632,159,41,unavailable
+programming-languages-runtimes,200,5199,562258,134,66,unavailable
+research-education,200,14007,459081,140,60,unavailable
+security-privacy,200,9536,336620,161,39,unavailable
+web-backend-frontend,184,1007,336620,144,40,unavailable
