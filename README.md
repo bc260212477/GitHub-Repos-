@@ -2,6 +2,16 @@
 
 For AI research and agent architecture discovery.
 
+## Filtered catalog
+
+The full list of catalog repositories with fewer than 2,000 stars is available here:
+
+- [repositories-under-2000-stars.csv](repositories-under-2000-stars.csv) — 136 unique repositories
+
+The file is derived from `all-categories-a-to-z.csv`, de-duplicated by repository URL,
+and sorted from highest to lowest star count. The catalog is a research index; review
+license, maintenance, security, and quality before using any repository.
+
 ## Preview
 
 ![Agent Foundry dashboard](assets/agent-foundry-dashboard.png)
