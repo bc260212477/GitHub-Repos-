@@ -2,6 +2,10 @@
 
 For AI research and agent architecture discovery.
 
+## Preview
+
+![Agent Foundry dashboard](assets/agent-foundry-dashboard.png)
+
 ## Agent Architecture Builder
 
 Generate a proposed stack from the catalog without API keys or external services:
