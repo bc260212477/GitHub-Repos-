@@ -12,6 +12,8 @@ The file is derived from `all-categories-a-to-z.csv`, de-duplicated by repositor
 and sorted from highest to lowest star count. The catalog is a research index; review
 license, maintenance, security, and quality before using any repository.
 
+- [repositories-over-2000-stars.csv](repositories-over-2000-stars.csv) — 1,690 unique repositories
+
 ## Preview
 
 ![Agent Foundry dashboard](assets/agent-foundry-dashboard.png)
