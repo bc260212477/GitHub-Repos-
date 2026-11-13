@@ -15,6 +15,7 @@ Start the backend API:
 
 ```bash
 python agent_api.py
+open http://127.0.0.1:8787
 curl http://127.0.0.1:8787/health
 curl 'http://127.0.0.1:8787/api/repositories?q=agent%20memory&limit=5'
 curl -X POST http://127.0.0.1:8787/api/architecture \
